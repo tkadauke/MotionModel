@@ -1,7 +1,7 @@
 GIT
   remote: git@github.com:aceofspades/motion-support.git
-  revision: abc925a419ddab405d41270ef2e9e415463efcdc
-  ref: abc925a
+  revision: 9914ae4b8e15b78c6999376a650f348e3e09ab2d
+  ref: hash_fix
   specs:
     motion-support (0.2.1)
       motion-require (>= 0.0.6)
@@ -58,6 +58,7 @@ PLATFORMS
 DEPENDENCIES
   cocoapods (~> 0.16.4)
   motion-cocoapods (= 1.2.1)
+  motion-require
   motion-stump (~> 0.2)
   motion-support!
   rake

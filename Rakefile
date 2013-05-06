@@ -7,6 +7,10 @@ require 'bundler'
 Bundler.require(:default)
 
 require 'motion-cocoapods'
+
+require 'motion-require'
+Motion::Require.all
+
 require 'motion-support'
 
 $:.unshift(File.expand_path('../lib', __FILE__))
@@ -19,5 +23,6 @@ Motion::Project::App.setup do |app|
   # Use `rake config' to see complete project settings.
   app.name = 'MotionModel'
   app.delegate_class = 'FakeDelegate'
+  app.detect_dependencies = false
   app.files << './app/app_delegate.rb'
 end
